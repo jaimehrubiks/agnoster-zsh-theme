@@ -24,14 +24,16 @@
 
 ### Segments of the prompt, default order declaration
 
-typeset -aHg AGNOSTER_PROMPT_SEGMENTS=(
-    prompt_status
-    prompt_context
-    prompt_virtualenv
-    prompt_dir
-    prompt_git
-    prompt_end
+AGNOSTER_PROMPT_SEGMENTS=(
+  prompt_status
+  prompt_context
+  prompt_virtualenv
+  prompt_dir
+  prompt_git
+  prompt_end
 )
+
+typeset -aHg AGNOSTER_PROMPT_SEGMENTS
 
 ### Segment drawing
 # A few utility functions to make it easy and re-usable to draw segmented prompts
